@@ -1,41 +1,40 @@
-import java.io.*
+import java.io.*;
 
 public class Employee {
   String name;
   String jobTitle;
-  float salary;
+  double salary;
 
   public Employee() {
-
   }
 
-  public setName(name) {
+  public void setName(String name) {
     this.name = name; 
   }
 
-  public setjobTitle(jobTitle) {
+  public void setJobTitle(String jobTitle) {
     this.jobTitle = jobTitle;
   }
 
-  public setSalary(salary) {
+  public void setSalary(double salary) {
     this.salary = salary;
   }
 
-  public String getName(name) {
+  public String getName() {
     return this.name;
   }
 
-  public String setjobTitle(jobTitle) {
+  public String getJobTitle() {
     return this.jobTitle;
   }
 
-  public int setSalary(salary) {
+  public double getSalary() {
     return this.salary;
   }
 
   public void details() {
-    System.out.println("Name: "+this.name)
-    System.out.println("Job Title: "+this.jobTitle)
-    System.out.println("Salary: "+this.salary)
+    System.out.println("Name: "+this.name);
+    System.out.println("Job Title: "+this.jobTitle);
+    System.out.println("Salary: "+this.salary);
   }
 }
